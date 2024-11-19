@@ -16,7 +16,7 @@ const SectionTwo = () => {
                         Welcome to Truebond Global Investment, where expertise meets opportunity. We specialize in delivering diverse investment solutions designed to grow wealth,
                         optimize asset value, and create lasting financial stability.
                     </p>
-                    <button className='p-4 bg-primaryOrange mt-10 text-[#0a0a08]'>Read more</button>
+                    <button className='p-4 bg-primaryOrange mt-10 text-[#0a0a08] border border-primaryOrange hover:bg-white'>Read more</button>
                     <div className='h-[200px] mt-20 relative  w-full'>
                         <div className='absolute max-h-[600px] w-full'>
                             <img src="/images/building.jpg" alt="building" className='relative z-10 object-cover' />

@@ -28,8 +28,8 @@ const Navbar = () => {
     const { pathname } = useLocation()
     return (
         <div>
-            <div className='bg-black'>
-                <div className=' w-full max-w-max mx-auto flex items-center justify-end gap-4 p-4 text-primaryOrange'>
+            <div className='flex justify-end w-full max-w-max mx-auto'>
+                <div className='bg-black w-fit max-w-max px-20 flex items-center justify-end gap-4 p-4 text-primaryOrange'>
                     <span><FaFacebook /></span>
                     <span><FaTwitter /></span>
                     <span><FaInstagram /></span>
