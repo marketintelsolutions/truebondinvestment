@@ -123,7 +123,8 @@ const SectionThree = () => {
                                 backgroundImage: `url(/images/${item.image}.jpg)`,
                                 backgroundSize: 'cover'
                             }}
-                            className={`min-w-[400px] transform transition-transform duration-500 `}
+                            className={`min-w-[400px] transform transition-transform duration-500 ${index === currentIndex ? 'scale-105' : 'scale-100'
+                                }`}
                         >
                             <div className='h-full w-full p-10 bg-[#0000005b] backdrop-blur-[2px] transition-all duration-300 hover:bg-[#00000080]'>
                                 <span><item.icon size={65} color='white' /></span>
