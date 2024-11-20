@@ -38,19 +38,19 @@ const Banner = () => {
                     <img src={`/images/${bannerData[currIndex].image}.jpg`} alt="banner" className={`relative  w-full z-10 h-full object-cover ${isAnimating ? 'opacity-40' : 'opacity-100 transition duration-[1s] ease-out'}`} />
                     <div className='absolute h-full z-20 top-0 left-0 w-full flex items-end'>
                         <div className={`${bannerData[currIndex].bgColor} ${bannerData[currIndex].textColor} h-[350px] w-full  p-10 flex flex-col gap-5`}>
-                            <h1 className={`uppercase text-[32px] max-w-[600px] ${isAnimating ? 'translate-y-[30px]' : 'translate-y-0 transition duration-[0.5s] ease-out'}`
+                            <h1 className={`uppercase text-[32px] max-w-[600px] ${isAnimating ? 'translate-y-[45px]' : 'translate-y-0 transition duration-[0.5s] ease-out'}`
                             }>{bannerData[currIndex].heading}
                             </h1>
                             <span className={`inline-flex h-1 bg-white rounded-full w-[400px] 
-                                ${isAnimating ? 'translate-y-[35px]' : 'translate-y-0 transition duration-[0.5s] ease-out delay-75'}`
+                                ${isAnimating ? 'translate-y-[50px]' : 'translate-y-0 transition duration-[0.5s] ease-out'}`
                             }></span>
                             <p className={`w-full max-w-[700px] text-xl 
-                                ${isAnimating ? 'translate-y-[40px]' : 'translate-y-0 transition duration-[0.5s] ease-out delay-100'}`
+                                ${isAnimating ? 'translate-y-[80px]' : 'translate-y-0 transition duration-[0.5s] ease-out '}`
                             }>
                                 {bannerData[currIndex].text}
 
                             </p>
-                            <button className={`px-8 py-3 bg-primaryOrange w-fit ${isAnimating ? 'translate-y-[60px]' : 'translate-y-0 transition duration-[0.5s] ease-out delay-155'} border border-primaryOrange hover:bg-white`}>Read More</button>
+                            <button className={`px-8 py-3 bg-primaryOrange w-fit ${isAnimating ? 'translate-y-[100px]' : 'translate-y-0 transition duration-[0.5s] ease-out '} border border-primaryOrange hover:bg-white`}>Read More</button>
                         </div>
                     </div>
                     <div className='w-full max-w-[75%] absolute bottom-0 left-0 flex justify-end gap-2  text-white z-30'>

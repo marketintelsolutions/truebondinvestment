@@ -59,3 +59,31 @@ export const products = [
         desc: 'In-depth market insights and consulting for informed decision-making.'
     },
 ]
+
+export const services = [
+    {
+        image: 'investment',
+        heading: 'Investment & Trading',
+        text: 'We engage in investments across different sectors, serving as commission agents, and managing wholesale and retail trade in textiles, electronics, furniture, cosmetics, and other consumer goods.',
+    },
+    {
+        image: 'construction',
+        heading: 'Contracting & Construction',
+        text: 'Our contracting services include a broad range of construction activities, from building and demolition projects to land development and property  management. We have partnerships in place to deliver efficient and sustainable infrastructure projects.',
+    },
+    {
+        image: 'manufacture',
+        heading: 'Manufacturing & Retail',
+        text: 'We provide manufacturing and retail solutions across various goods including textiles, household items, chemicals, and more. Our robust supply chain enables us to offer high-quality products to our clients, meeting both local and international demands.',
+    },
+    {
+        image: 'oilgas',
+        heading: 'Oil, Gas & Minerals',
+        text: 'As an active participant in Nigeria\'s oil and gas sector, we specialize in exploration, production, and sales of petroleum products. We also engage in services such as oil well drilling, refinery operations, and petroleum marketing',
+    },
+    {
+        image: 'transportation',
+        heading: 'Logistics & Transportation',
+        text: 'We offer transportation solutions within Nigeria and beyond, providing seamless movement of goods, mail, and passengers by land, sea, and air. Our logistics services ensure that clients\' needs are met efficiently and reliably.',
+    },
+]

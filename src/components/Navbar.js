@@ -8,16 +8,7 @@ import { Link, useLocation } from 'react-router-dom'
 const navigationLinks = [
     { path: '/', label: 'Home' },
     { path: '/about-us', label: 'About Us' },
-    // {
-    //     label: 'Properties',
-    //     isDropdown: true,
-    //     dropdownItems: [
-    //         { path: '/all-properties', label: 'All' },
-    //         { path: '/buy', label: 'Buy' },
-    //         { path: '/rent', label: 'Rent' }
-    //     ]
-    // },
-    { path: '/blog', label: 'Blog' },
+    { path: '/services', label: 'Services' },
     { path: '/contact', label: 'Contact' }
 ];
 
