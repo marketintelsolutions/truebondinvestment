@@ -19,6 +19,25 @@ module.exports = {
       },
       fontFamily: {
         dmsans: "DM Sans"
+      },
+      keyframes: {
+        pageTransition: {
+          '0%': {
+            width: '0%',
+            right: '0',
+          },
+          '70%': {
+            width: '70%',
+            right: '0',
+          },
+          '100%': {
+            width: '0%',
+            right: '100%',
+          }
+        }
+      },
+      animation: {
+        'pageTransition': 'pageTransition 1.5s ease-in-out forwards'
       }
     },
   },

@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Contact = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <section>
-            <div className='py-20 bg-black'>
+            <div className='pt-32 pb-40 bg-black'>
                 <h1 className='w-full max-w-max mx-auto text-primaryOrange text-[50px]'>Contact</h1>
             </div>
             <div className='h-[400px] relative'>
@@ -17,7 +20,14 @@ const Contact = () => {
                     <p className='text-[20px] font-light'>We would love to hear from you</p>
                     <p className='text-[17px] font-extralight mt-12'> Lot 22, Akiogun New Market Road,
                         <br />  Oniru Victoria Island, Lagos</p>
-                    <p className='text-[17px] font-extralight mt-8'>Email: <span className='text-primaryOrange'> info@carrierinsurancebrokers.com</span></p>
+                    <p className='text-[17px] font-extralight mt-8 flex gap-2'>
+                        <span className='inline-flex w-14'>Email:</span>
+                        <span className='text-primaryOrange'> info@carrierinsurancebrokers.com</span>
+                    </p>
+                    <p className='text-[17px] font-extralight mt-8 flex gap-2'>
+                        <span className='inline-flex w-14'>Phone:</span>
+                        <span className='text-primaryOrange'> 09062447811,  07074521822, 09062979783,<br /> 09131038886, 09062979787</span>
+                    </p>
                 </div>
 
                 <div className='w-full max-w-[45%]'>
@@ -46,12 +56,12 @@ const Contact = () => {
                         <label htmlFor="message" className='text-[12px] font-thin text-gray-400'>Your Message</label>
                         <textarea type="text" id='message' className='h-[120px] resize-none focus:outline-none focus:border-black pb-4 border-b border-[#9ca3afb0] text-sm w-full' placeholder='Enter your message' />
                     </div>
-                    <button className='w-full py-4 mt-10 rounded-[4px] bg-primaryOrange border border-primaryOrange text-white hover:bg-white hover:text-primaryOrange'>Send Message</button>
+                    <button className='w-full py-4 mt-10 rounded-[4px] bg-primaryOrange  text-white hover:bg-black hover:text-white'>Send Message</button>
                 </div>
             </div>
 
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5291.949439359551!2d3.413942828719971!3d6.429309943435859!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8acdf16fd5d5%3A0x94a92add6d024f09!2sLSDPC%20Flats%2C%20Victoria%20Island%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1731140942595!5m2!1sen!2sng" height="450" style={{ border: 0, loading: "lazy", width: '100%' }}></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.7489422254266!2d3.452132680637935!3d6.426292876971863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf508f117bcad%3A0xb4bb382611a28ced!2s22%20Akiogun%20Rd%2C%20Maroko%2C%20Lagos%20106104%2C%20Lagos!5e0!3m2!1sen!2sng!4v1732228086997!5m2!1sen!2sng" width="600" height="450" style={{ border: 0, loading: "lazy", width: '100%' }}></iframe>
             </div>
         </section>
     )

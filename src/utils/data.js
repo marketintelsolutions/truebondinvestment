@@ -9,21 +9,26 @@ export const bannerData = [
         heading: 'your trusted partner in comprehensive insurance solutions',
         text: 'We’re dedicated to protecting what matters most to you, from your health and assets to your business and future',
         bgColor: 'bg-[#0000006c]',
-        textColor: 'text-[#fff]'
+        textColor: 'text-[#fff]',
+        link: '/about'
     },
     {
         image: 'banner2',
         heading: 'Discover a full range of insurance products ',
         text: 'Our mission is to empower individuals and businesses with secure, accessible, and personalized insurance coverage',
         bgColor: 'bg-[rgba(244,132,52,0.25)]',
-        textColor: 'text-[#000]'
+        textColor: 'text-[#000]',
+        link: '/about'
+
     },
     {
         image: 'banner3',
         heading: 'leader in insurance solutions for over 29 years',
         text: 'Our experienced team of professionals works to tailor policies that meet the unique needs of each client',
         bgColor: 'bg-[rgba(256,256,256,0.85)]',
-        textColor: 'text-[#000]'
+        textColor: 'text-[#000]',
+        link: '/contact'
+
     },
 ]
 
