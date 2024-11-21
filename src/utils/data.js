@@ -92,3 +92,11 @@ export const services = [
         text: 'We offer transportation solutions within Nigeria and beyond, providing seamless movement of goods, mail, and passengers by land, sea, and air. Our logistics services ensure that clients\' needs are met efficiently and reliably.',
     },
 ]
+
+export const navigationLinks = [
+    // { path: '/', label: 'Home' },
+    { path: '/about-us', label: 'About Us' },
+    { path: '/services', label: 'Services' },
+    { path: '/media', label: 'Media' },
+    { path: '/contact', label: 'Contact' }
+];

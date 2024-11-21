@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { products } from '../../utils/data';
 import { BsChevronLeft, BsChevronRight, BsPauseFill, BsPlayFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import NewsItem from '../News/NewsItem';
 
 const SectionThree = () => {
     const [isPaused, setIsPaused] = useState(false);
@@ -160,7 +161,7 @@ const SectionThree = () => {
                 <div className='flex items-center gap-4'>
 
 
-                    <Link to={'/services'} className='p-4 text-center bg-primaryOrange hover:bg-black hover:text-white  w-[150px] text-base hover:bg-opacity-90 transition-colors'>
+                    <Link to={'/media'} className='p-4 text-center bg-primaryOrange hover:bg-black hover:text-white  w-[150px] text-base hover:bg-opacity-90 transition-colors'>
                         More news
                     </Link>
                 </div>
@@ -176,47 +177,17 @@ const SectionThree = () => {
                         </div>
                     </div>
                     <div className='flex gap-[30px] flex-col w-full h-full max-h-[550px] max-w-[30%]'>
-                        <div className='relative'>
-                            <img src='/images/award.jpg' alt='award' className='w-full h-full ' />
-                            <div className='w-full h-full absolute top-0 left-0 bg-[#00000069] p-10  flex flex-col gap-5 justify-end'>
-                                <p className='text-primaryOrange bg-white px-2 py-1 w-fit text-[12px]'>11 months ago</p>
-                                <p className='text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                            </div>
-                        </div>
-                        <div className='relative'>
-                            <img src='/images/award.jpg' alt='award' className='w-full h-full ' />
-                            <div className='w-full h-full absolute top-0 left-0 bg-[#00000069] p-10  flex flex-col gap-5 justify-end'>
-                                <p className='text-primaryOrange bg-white px-2 py-1 w-fit text-[12px]'>11 months ago</p>
-                                <p className='text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                            </div>
-                        </div>
+                        <NewsItem />
+                        <NewsItem />
                     </div>
                 </div>
                 <div className='flex gap-10 mt-10'>
                     <div className='w-full flex gap-10 max-w-[70%]'>
-                        <div className='relative'>
-                            <img src='/images/award.jpg' alt='award' className='w-full h-full ' />
-                            <div className='w-full h-full absolute top-0 left-0 bg-[#00000069] p-10  flex flex-col gap-5 justify-end'>
-                                <p className='text-primaryOrange bg-white px-2 py-1 w-fit text-[12px]'>11 months ago</p>
-                                <p className='text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                            </div>
-                        </div>
-                        <div className='relative'>
-                            <img src='/images/award.jpg' alt='award' className='w-full h-full ' />
-                            <div className='w-full h-full absolute top-0 left-0 bg-[#00000069] p-10  flex flex-col gap-5 justify-end'>
-                                <p className='text-primaryOrange bg-white px-2 py-1 w-fit text-[12px]'>11 months ago</p>
-                                <p className='text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                            </div>
-                        </div>
+                        <NewsItem />
+                        <NewsItem />
                     </div>
                     <div className='w-full max-w-[30%]'>
-                        <div className='relative h-full'>
-                            <img src='/images/award.jpg' alt='award' className='w-full h-full ' />
-                            <div className='w-full h-full absolute top-0 left-0 bg-[#00000069] p-10  flex flex-col gap-5 justify-end'>
-                                <p className='text-primaryOrange bg-white px-2 py-1 w-fit text-[12px]'>11 months ago</p>
-                                <p className='text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                            </div>
-                        </div>
+                        <NewsItem />
                     </div>
                 </div>
             </div>

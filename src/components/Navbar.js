@@ -5,14 +5,9 @@ import { HiOutlineMail } from 'react-icons/hi';
 import { IoMenu } from 'react-icons/io5';
 import { MdHomeWork } from 'react-icons/md'
 import { Link, useLocation } from 'react-router-dom'
+import { navigationLinks } from '../utils/data';
 
-const navigationLinks = [
-    // { path: '/', label: 'Home' },
-    { path: '/about-us', label: 'About Us' },
-    { path: '/services', label: 'Services' },
-    { path: '/media', label: 'Media' },
-    { path: '/contact', label: 'Contact' }
-];
+
 
 const Navbar = () => {
     const [isDropdown, setIsDropdown] = useState(false);
