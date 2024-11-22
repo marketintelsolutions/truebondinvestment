@@ -24,7 +24,7 @@ const Media = () => {
                     </div>
                     <div className='grid grid-cols-2 gap-10 mt-10'>
                         {
-                            Array.from({ length: 6 }, (_, index) => <NewsItem key={index} />)
+                            Array.from({ length: 6 }, (_, index) => <NewsItem key={index} id={index + 1} />)
                         }
 
                     </div>

@@ -9,7 +9,7 @@ const MainLayout = ({ children }) => {
         <div className='relative'>
             <PageTransition />
             <Navbar />
-            <div className='pt-20 '>{children}</div>
+            <div className='pt-24 '>{children}</div>
             <Footer />
         </div>
     )

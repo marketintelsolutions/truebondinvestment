@@ -9,6 +9,8 @@ import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import PageTransition from "./components/PageTransition";
 import Media from "./pages/Media";
+import MediaItem from "./pages/MediaItem";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const router = createBrowserRouter([
@@ -45,6 +47,14 @@ function App() {
       ),
     },
     {
+      path: "/media/:id",
+      element: (
+        <MainLayout>
+          <MediaItem />
+        </MainLayout>
+      ),
+    },
+    {
       path: "/contact",
       element: (
         <MainLayout>
@@ -60,6 +70,7 @@ function App() {
       {/* <Navbar />
       <Landing /> */}
       <RouterProvider router={router} />
+      <Toaster position="bottom-center" />
     </div>
   );
 }
