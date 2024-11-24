@@ -11,6 +11,7 @@ import PageTransition from "./components/PageTransition";
 import Media from "./pages/Media";
 import MediaItem from "./pages/MediaItem";
 import { Toaster } from "react-hot-toast";
+import Subsidiaries from "./pages/Subsidiaries";
 
 function App() {
   const router = createBrowserRouter([
@@ -51,6 +52,14 @@ function App() {
       element: (
         <MainLayout>
           <MediaItem />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/subsidiaries",
+      element: (
+        <MainLayout>
+          <Subsidiaries />
         </MainLayout>
       ),
     },
