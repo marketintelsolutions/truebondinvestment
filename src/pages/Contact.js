@@ -10,7 +10,7 @@ const Contact = () => {
                 <h1 className='w-full max-w-max mx-auto text-primaryOrange text-[50px]'>Contact</h1>
             </div>
             <div className='h-[400px] relative'>
-                <img src="/images/contactbanner.jpg" alt="contactbanner" className='w-full h-full object-cover' />
+                <img src="/images/contact.jpg" alt="contactbanner" className='w-full h-full object-cover' />
                 <span className='inline-flex absolute top-0 left-0 bg-[#00000094] w-full h-full'></span>
             </div>
 
@@ -18,7 +18,7 @@ const Contact = () => {
                 <div className='flex flex-col gap-4'>
                     <h1 className='text-[40px]'>Contact Channels</h1>
                     <p className='text-[20px] font-light'>We would love to hear from you</p>
-                    <p className='text-[17px] font-extralight mt-12'> Lot 22, Akiogun New Market Road,
+                    <p className='text-[17px] font-extralight mt-12'> PLot 22, Akiogun New Market Road,
                         <br />  Oniru Victoria Island, Lagos</p>
                     <p className='text-[17px] font-extralight mt-8 flex gap-2'>
                         <span className='inline-flex w-14'>Email:</span>

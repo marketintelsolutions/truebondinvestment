@@ -27,11 +27,11 @@ const Footer = () => {
                         </div>
                         <div className='flex flex-col justify-between h-[200px] text-[#ffffffcb] font-extralight'>
                             <h3 className='min-w-max font-light text-white'>Contact Us</h3>
-                            <p className='text-base font-roboto mt-5'>500 Terry Francine Street
+                            <p className='text-base font-roboto mt-5'>PLot 22, Akiogun New Market Road,
                                 <br />
-                                San Francisco, CA 94158
+                                Oniru Victoria Island, Lagos
                                 <br />
-                                info@mysite.com</p>
+                                info@carrierinsurancebrokers.com</p>
                             <div className='flex items-center gap-4 h-full pt-6 pb-2  border-b-4 border-transparent '>
                                 <span><FaFacebookF size={16} /></span>
                                 <span><FaTwitter size={16} /></span>

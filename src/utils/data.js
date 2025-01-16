@@ -104,7 +104,7 @@ export const navigationLinks = [
 
 export const subsidiaries = [
     {
-        image: 'subsidiarybanner.jpg',
+        image: 'carrierinsurance.jpg',
         heading: 'Carrier Insurance Brokers',
         text: 'Carrier Insurance Brokers is a premier insurance brokerage firm, offering a wide range of services including risk management, underwriting, and claims advisory. We provide tailored insurance solutions for individuals, businesses, and organizations, ensuring comprehensive coverage and peace of mind. With extensive market knowledge and a focus on client satisfaction, we help our clients navigate their insurance needs effectively.',
         link: 'www.carrierinsurancebrokers.com'
@@ -116,23 +116,23 @@ export const subsidiaries = [
         link: 'www.truebondproperties.com.ng'
     },
     {
-        image: 'subsidiarybanner.jpg',
+        image: 'privateequity.jpg',
         heading: 'TrueBond Private Equity',
         text: 'TrueBond Private Equity is a strategic investment firm focused on funding high-potential businesses across a range of sectors. We provide capital and expertise to help businesses grow, scale, and innovate, with a strong emphasis on long-term value creation. By partnering with businesses and entrepreneurs, we seek opportunities that generate both profitable returns and social impact, fostering sustainable business models that can thrive in today\'s dynamic market.',
     },
     {
-        image: 'subsidiarybanner.jpg',
+        image: 'house.jpg',
         heading: 'Chris & Christene Limited',
         text: 'Chris & Christene Limited is focused on property ownership and investment. We own and manage a diverse portfolio of residential and commercial properties, strategically located to maximize value. With a focus on long-term growth and sustainability, Chris & Christene Limited is committed to providing high-quality, well-located properties that enhance the built environment and contribute to the development of thriving communities.',
         link: 'www.c-c-foundation.com'
     },
     {
-        image: 'subsidiarybanner.jpg',
+        image: 'charity.jpg',
         heading: 'Chris and Christene Foundation',
         text: 'The Chris and Christene Foundation is the charitable arm of TrueBond Global Investments, dedicated to supporting education, health, and social well-being. Through strategic initiatives and partnerships with local communities and organizations, we aim to improve access to education, enhance healthcare services, and promote sustainable development. Our foundation is driven by a mission to create positive social impact and empower communities for a better future.',
     },
     {
-        image: 'subsidiarybanner.jpg',
+        image: 'bookhouse.jpg',
         heading: 'Book House Limited',
         text: 'Book House Limited is a leading provider of educational resources, specializing in the publishing and distribution of books, educational materials, and learning tools. We are committed to supporting education at all levels by providing access to high-quality educational content. Through our services, we aim to promote literacy, foster a culture of lifelong learning, and contribute to the advancement of education in Nigeria and beyond.',
     },
