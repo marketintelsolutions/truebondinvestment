@@ -50,7 +50,7 @@ const About = () => {
                 </div>
             </div>
 
-            <div className='my-20 flex flex-col gap-14 items-center'>
+            <div className='py-20 w-full flex flex-col gap-14 items-center bg-primaryGray'>
                 <h1 className='text-[60px]'>Our Core Values</h1>
                 <div className='flex gap-32'>
                     <div className='flex flex-col gap-5'>

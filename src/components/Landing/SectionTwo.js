@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Counts from './Counts'
 
 const SectionTwo = () => {
     return (
@@ -12,8 +13,9 @@ const SectionTwo = () => {
                         <img src="/images/map.jpg" alt="map" className='h-[250px] object-cover' />
                     </div>
                     <div className=' h-full flex flex-col gap-0 translate-y-[90%]'>
-                        <h2 className='text-[150px] text-primaryOrange tracking-[8px]'>20+</h2>
-                        <p className='text-black uppercase text-base'>Years in business</p>
+                        {/* <h2 className='text-[150px] text-primaryOrange tracking-[8px]'>20+</h2> */}
+                        <Counts />
+                        <p className='text-black uppercase text-lg'>Years in business</p>
                     </div>
                 </div>
                 <div className='w-full  max-w-[50%]'>
@@ -21,7 +23,7 @@ const SectionTwo = () => {
                         Welcome to Truebond Global Investment, where expertise meets opportunity. We <span className='text-primaryOrange'>specialize</span > in delivering diverse investment solutions designed to grow wealth,
                         optimize asset value, and create lasting financial stability.
                     </p>
-                    <Link to='/about-us' className='py-4 px-8 bg-primaryOrange flex w-fit mt-10 text-[#0a0a08]  hover:bg-black hover:text-white'>Read more</Link>
+                    <Link to='/about-us' className='py-4 px-8 bg-primaryOrange rounded-full flex w-fit mt-10 text-[#0a0a08]  hover:bg-black hover:text-white'>Read more</Link>
                     <div className='h-[200px] mt-20 relative  w-full'>
                         <div className='absolute  max-h-[600px] w-full'>
                             <img src="/images/building.jpg" alt="building" className='relative z-10 h-[600px] w-full object-cover' />

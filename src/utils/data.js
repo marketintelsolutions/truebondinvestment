@@ -10,7 +10,7 @@ export const bannerData = [
         text: 'We’re dedicated to protecting what matters most to you, from your health and assets to your business and future',
         bgColor: 'bg-[#0000006c]',
         textColor: 'text-[#fff]',
-        link: '/about'
+        link: '/about-us'
     },
     {
         image: 'banner2',
@@ -18,7 +18,7 @@ export const bannerData = [
         text: 'Our mission is to empower individuals and businesses with secure, accessible, and personalized insurance coverage',
         bgColor: 'bg-[rgba(244,132,52,0.25)]',
         textColor: 'text-[#000]',
-        link: '/about'
+        link: '/about-us'
 
     },
     {

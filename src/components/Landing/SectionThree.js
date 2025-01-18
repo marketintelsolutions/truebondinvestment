@@ -106,7 +106,7 @@ const SectionThree = () => {
                     >
                         <BsChevronRight size={24} />
                     </button>
-                    <Link to={'/services'} className='p-4 text-center bg-primaryOrange hover:bg-black hover:text-white  w-[150px] text-base hover:bg-opacity-90 transition-colors'>
+                    <Link to={'/services'} className='p-4 rounded-full text-center bg-primaryOrange hover:bg-black hover:text-white  w-[150px] text-base hover:bg-opacity-90 transition-colors'>
                         See all business
                     </Link>
                 </div>
@@ -161,7 +161,7 @@ const SectionThree = () => {
                 <div className='flex items-center gap-4'>
 
 
-                    <Link to={'/media'} className='p-4 text-center bg-primaryOrange hover:bg-black hover:text-white  w-[150px] text-base hover:bg-opacity-90 transition-colors'>
+                    <Link to={'/media'} className='p-4 rounded-full text-center bg-primaryOrange hover:bg-black hover:text-white  w-[150px] text-base hover:bg-opacity-90 transition-colors'>
                         More news
                     </Link>
                 </div>

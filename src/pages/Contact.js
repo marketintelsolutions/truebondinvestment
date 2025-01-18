@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 
 const Contact = () => {
-    useEffect(() => {
-        window.scroll(0, 0)
-    }, [])
+    // useEffect(() => {
+    //     window.scroll(0, 0)
+    // }, [])
     return (
         <section>
             <div className='pt-32 pb-40 bg-black'>
@@ -30,34 +30,30 @@ const Contact = () => {
                     </p>
                 </div>
 
-                <div className='w-full max-w-[45%]'>
+                <form className='w-full max-w-[50%] flex flex-col gap-10 p-10 rounded-[10px] bg-white shadow-[0px_0px_15px_5px_rgba(0,0,0,0.1)]'>
                     <h2>Send us a mail</h2>
-                    <div className='w-full mt-10 flex gap-6'>
-                        <div className='w-full flex flex-col gap-4'>
-                            <label htmlFor="name" className='text-[12px] font-thin text-gray-400'>Your name</label>
-                            <input type="text" id='name' className='focus:outline-none focus:border-black pb-4 border-b border-[#9ca3afb0] text-sm w-full' placeholder='Full name' />
-                        </div>
-                        <div className='w-full flex flex-col gap-4'>
-                            <label htmlFor="email" className='text-[12px] font-thin text-gray-400'>Email Address</label>
-                            <input type="email" id='email' className='focus:outline-none focus:border-black pb-4 border-b border-[#9ca3afb0] text-sm w-full' placeholder='Email Address' />
-                        </div>
+                    <div className='w-full flex flex-col gap-4'>
+                        <label htmlFor="name" className='text-[15px] font-semibold text-gray-400'>Your name</label>
+                        <input type="text" id='name' className='focus:outline-none  focus:border-black pb-4 rounded-full py-5 bg-[rgba(194,196,200,0.48)]  text-base w-full' />
                     </div>
-                    <div className='w-full mt-10 flex gap-6'>
-                        <div className='w-full flex flex-col gap-4'>
-                            <label htmlFor="phone" className='text-[12px] font-thin text-gray-400'>Phone number</label>
-                            <input type="number" id='phone' className='focus:outline-none focus:border-black pb-4 border-b border-[#9ca3afb0] text-sm w-full' placeholder='Phone number' />
-                        </div>
-                        <div className='w-full flex flex-col gap-4'>
-                            <label htmlFor="subject" className='text-[12px] font-thin text-gray-400'>Subject</label>
-                            <input type="text" id='subject' className='focus:outline-none focus:border-black pb-4 border-b border-[#9ca3afb0] text-sm w-full' placeholder='Subject' />
-                        </div>
+                    <div className='w-full flex flex-col gap-4'>
+                        <label htmlFor="email" className='text-[15px] font-semibold text-gray-400'>Email Address</label>
+                        <input type="email" id='email' className='focus:outline-none focus:border-black pb-4 rounded-full py-5 bg-[rgba(194,196,200,0.48)]  text-sm w-full' />
                     </div>
-                    <div className='w-full flex flex-col gap-4 mt-10'>
-                        <label htmlFor="message" className='text-[12px] font-thin text-gray-400'>Your Message</label>
-                        <textarea type="text" id='message' className='h-[120px] resize-none focus:outline-none focus:border-black pb-4 border-b border-[#9ca3afb0] text-sm w-full' placeholder='Enter your message' />
+                    <div className='w-full flex flex-col gap-4'>
+                        <label htmlFor="phone" className='text-[15px] font-semibold text-gray-400'>Phone number</label>
+                        <input type="number" id='phone' className='focus:outline-none focus:border-black pb-4 rounded-full py-5 bg-[rgba(194,196,200,0.48)] text-sm w-full' />
                     </div>
-                    <button className='w-full py-4 mt-10 rounded-[4px] bg-primaryOrange  text-white hover:bg-black hover:text-white'>Send Message</button>
-                </div>
+                    <div className='w-full flex flex-col gap-4'>
+                        <label htmlFor="subject" className='text-[15px] font-semibold text-gray-400'>Subject</label>
+                        <input type="text" id='subject' className='focus:outline-none focus:border-black pb-4 rounded-full py-5 bg-[rgba(194,196,200,0.48)] text-sm w-full' />
+                    </div>
+                    <div className='w-full flex flex-col gap-4 mt-0'>
+                        <label htmlFor="message" className='text-[15px] font-semibold text-gray-400'>Your Message</label>
+                        <textarea type="text" id='message' className='h-[120px] resize-none focus:outline-none focus:border-black pb-4 rounded-[10px] py-5 bg-[rgba(194,196,200,0.48)]  text-sm w-full' />
+                    </div>
+                    <button type='button' className='w-full py-4 mt-10 rounded-full bg-primaryOrange  text-white hover:bg-black hover:text-white '>Send Message</button>
+                </form>
             </div>
 
             <div>
