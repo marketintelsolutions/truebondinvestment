@@ -12,6 +12,7 @@ import Media from "./pages/Media";
 import MediaItem from "./pages/MediaItem";
 import { Toaster } from "react-hot-toast";
 import Subsidiaries from "./pages/Subsidiaries";
+import Team from "./pages/Team";
 
 function App() {
   const router = createBrowserRouter([
@@ -28,6 +29,14 @@ function App() {
       element: (
         <MainLayout>
           <About />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/team",
+      element: (
+        <MainLayout>
+          <Team />
         </MainLayout>
       ),
     },

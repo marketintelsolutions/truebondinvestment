@@ -23,11 +23,11 @@ body,
 .slanted-edge::before {
   content: "";
   position: absolute;
-  left: -20px;
+  left: -65px;
   top: 0;
   height: 100%;
-  width: 40px;
+  width: 130px;
   background: black;
-  transform: skewX(25deg);
+  transform: skewX(65deg);
   z-index: -1;
 }

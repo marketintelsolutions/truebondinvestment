@@ -95,7 +95,7 @@ export const services = [
 
 export const navigationLinks = [
     // { path: '/', label: 'Home' },
-    { path: '/about-us', label: 'About Us' },
+    { path: '/about-us', label: 'About Us', isDropdown: true, dropdownItems: [{ path: '/about-us', label: 'About' }, { path: '/team', label: "Team" }] },
     { path: '/services', label: 'Services' },
     { path: '/media', label: 'Media' },
     { path: '/subsidiaries', label: 'Subsidiaries' },

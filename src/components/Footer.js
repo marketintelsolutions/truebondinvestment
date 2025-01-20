@@ -6,13 +6,12 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
     return (
         <footer className='w-full  '>
-            <div className='bg-black relative z-10 pt-10 pb-20  text-white'>
+            <div className='bg-black relative z-10 pt-10 pb-10  text-white'>
                 <div className='w-full  max-w-max mx-auto flex flex-col flex-wrap gap-10 px-6 lg:px-0 justify-center'>
                     <div className='h-[100px] flex  justify-end '>
                         <div className='flex items-center gap-3 '>
-                            <span className='text-primaryOrange'><MdHomeWork size={40} /></span>
-                            <h1 className='text-[29px]'>Truebond</h1>
-                            <p className='text-[24px] font-light tracking-[2px]'>INVESTMENT</p>
+                            <h1 className='text-[29px] text-primaryOrange font-semibold'>Truebond</h1>
+                            <p className='text-[29px] font-light tracking-[2px]'>INVESTMENT</p>
                         </div>
 
                     </div>
@@ -57,6 +56,9 @@ const Footer = () => {
                                 <span><FaLinkedinIn size={16} /></span>
                             </div>
                         </div>
+                    </div>
+                    <div className='pt-4 border-t'>
+                        <p>&copy; Truebond Investment {new Date().getFullYear()} </p>
                     </div>
                 </div>
             </div>

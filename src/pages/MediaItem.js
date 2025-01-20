@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaChevronLeft, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { toast } from 'react-hot-toast';
+import { Link } from 'react-router-dom';
 
 const MediaItem = () => {
   const [copied, setCopied] = useState(false);
@@ -51,6 +52,14 @@ const MediaItem = () => {
 
   return (
     <section className='pt-10 pb-40'>
+      <div className='pt-32 pb-40 bg-black'>
+        <h1 className='w-full max-w-max mx-auto text-primaryOrange text-[50px]'>News Item</h1>
+      </div>
+      <div className='w-full max-w-max mx-auto mt-5 py-4'>
+        <Link to={-1} className=' py-3 w-[120px] flex items-center gap-2 justify-center bg-black text-white hover:text-primaryOrange font-semibold rounded-[6px]'>
+          <span className=''><FaChevronLeft /></span> BACK
+        </Link>
+      </div>
       <h1 className='text-[55px] text-left w-full max-w-[900px] mx-auto'>{articleTitle}</h1>
       <p className='font-light w-full max-w-[900px] mx-auto text-sm mt-5'>August 31st, 2024</p>
 
