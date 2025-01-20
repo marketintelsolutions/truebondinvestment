@@ -5,7 +5,6 @@ import { IoClose } from "react-icons/io5";
 import { style } from "./config";
 
 const TeamMemberModal = ({ modal }) => {
-    console.log('modal', modal);
     return (
         <Modal
             open={modal.isOpen}
