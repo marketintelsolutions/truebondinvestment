@@ -28,6 +28,6 @@ body,
   height: 100%;
   width: 130px;
   background: black;
-  transform: skewX(65deg);
+  transform: skewX(55deg);
   z-index: -1;
 }
