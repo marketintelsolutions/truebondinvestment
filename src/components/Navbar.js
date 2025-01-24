@@ -69,15 +69,17 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>}
-            <nav className={`flex w-full justify-center bg-white pt-4 pb-1 fixed transition-transform duration-300 z-50 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
+            <nav className={`flex w-full justify-center bg-white py-4 fixed transition-transform duration-300 z-50 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
                 <div className='flex relative gap-8 justify-between  w-full max-w-max  items-center bg-primaryBlue text-black '>
                     <div className='flex items-center gap-8 md:w-auto w-full justify-between'>
                         <Link to={'/'} className='flex  items-center gap-3 h-full py-0'>
                             <img src="/images/logo.svg" alt="logo" className='max-w-[250px]' />
                         </Link>
-
                     </div>
-                    <div className={`md:relative absolute bg-black px-6 justify-between text-white  left-0 md:flex-row flex-col max-w-[837px] w-full bg-primaryBlue md:py-4 py-10  items-center gap-14 pr-10 ${isMenu ? 'flex ' : 'md:flex zr:hidden '} `}>
+                    <div
+                        className={`md:relative absolute bg-black px-6 justify-between text-white  left-0 md:flex-row flex-col max-w-[837px] w-full bg-primaryBlue md:py-4 py-10  items-center gap-14 pr-10 ${isMenu ? 'flex ' : 'md:flex zr:hidden '}`}
+                        onMouseLeave={() => setIsDropdown(false)}
+                    >
                         {navigationLinks.map((item, index) => {
                             if (item.isDropdown) {
                                 return (
