@@ -105,8 +105,8 @@ export const navigationLinks = [
 export const subsidiaries = [
     {
         image: 'carrierinsurance.jpg',
-        heading: 'Carrier Insurance Brokers',
-        text: 'Carrier Insurance Brokers is a premier insurance brokerage firm, offering a wide range of services including risk management, underwriting, and claims advisory. We provide tailored insurance solutions for individuals, businesses, and organizations, ensuring comprehensive coverage and peace of mind. With extensive market knowledge and a focus on client satisfaction, we help our clients navigate their insurance needs effectively.',
+        heading: 'Trubond Insurance Brokers Limited',
+        text: 'Trubond Insurance Brokers Limited is a premier insurance brokerage firm, offering a wide range of services including risk management, underwriting, and claims advisory. We provide tailored insurance solutions for individuals, businesses, and organizations, ensuring comprehensive coverage and peace of mind. With extensive market knowledge and a focus on client satisfaction, we help our clients navigate their insurance needs effectively.',
         link: 'www.carrierinsurancebrokers.com'
     },
     {
