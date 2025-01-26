@@ -53,7 +53,7 @@ const CountBox = ({ icon, end, heading, children }) => {
       className=" text-black   "
     >
       <div className="flex gap-4 items-center mb-4">
-        <div className="text-3xl text-primaryGreen">{icon}</div>
+        <div className="text-2xl md:text-3xl text-primaryGreen">{icon}</div>
         <span className="text-[150px] text-primaryOrange tracking-[8px] font-bold ">
           {count}+
         </span>

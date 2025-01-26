@@ -32,7 +32,7 @@ const SectionFour = () => {
     };
 
     return (
-        <div className="w-full bg-[#222222] text-white pt-20">
+        <div className="relative z-10 w-full bg-[#222222] text-white pt-20">
             <div className="w-full max-w-[1000px] mx-auto px-4">
                 <h2 className="text-3xl mb-4 font-light tracking-[4px]">FREQUENTLY ASKED QUESTIONS</h2>
                 <p className="text-base font-light mb-10">Find answers to common questions about our insurance products and services.</p>

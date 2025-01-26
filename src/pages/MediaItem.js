@@ -52,22 +52,22 @@ const MediaItem = () => {
 
   return (
     <section className='pt-10 pb-40'>
-      <div className='pt-32 pb-40 bg-black'>
+      <div className='pt-32 pb-40 px-6 lg:px-0 bg-black'>
         <h1 className='w-full max-w-max mx-auto text-primaryOrange text-[50px]'>News Item</h1>
       </div>
-      <div className='w-full max-w-max mx-auto mt-5 py-4'>
+      <div className='w-full max-w-max mx-auto mt-5 py-4 px-6 lg:px-0'>
         <Link to={-1} className=' py-3 w-[120px] flex items-center gap-2 justify-center bg-black text-white hover:text-primaryOrange font-semibold rounded-[6px]'>
           <span className=''><FaChevronLeft /></span> BACK
         </Link>
       </div>
-      <h1 className='text-[55px] text-left w-full max-w-[900px] mx-auto'>{articleTitle}</h1>
-      <p className='font-light w-full max-w-[900px] mx-auto text-sm mt-5'>August 31st, 2024</p>
+      <h1 className='text-[35px] md:text-[45px] lg:text-[55px] px-6 lg:px-0 text-left w-full max-w-[900px] mx-auto'>{articleTitle}</h1>
+      <p className='font-light px-6 lg:px-0 w-full max-w-[900px] mx-auto text-xs md:text-sm mt-5'>August 31st, 2024</p>
 
       <div className='w-full max-h-[700px] relative mt-20'>
         <img src="/images/award.jpg" alt="award" className='w-full h-full max-h-[700px] object-cover' />
       </div>
 
-      <div className='w-full max-w-max mx-auto mt-20 flex gap-14'>
+      <div className='w-full max-w-max mx-auto mt-20 px-6 lg:px-0 flex flex-col lg:flex-row gap-14'>
         <div className='flex flex-col gap-4'>
           <h2 className='uppercase mb-3'>Share</h2>
           <ShareButton
@@ -92,7 +92,7 @@ const MediaItem = () => {
           />
         </div>
 
-        <div className='text-xl tracking-[2px] leading-[28px] font-light'>
+        <div className='text-base md:text-xl tracking-[2px] leading-[28px] font-light'>
           {/* Article content */}
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, repellendus. Vel eos ipsa, labore temporibus ex libero provident cum, laborum at, <br /> <br /> a qui tenetur eligendi magni inventore non quo molestiae quas! Assumenda praesentium voluptatum fugit dolor beatae nam? Esse, minus? Fuga distinctio nemo voluptas consequatur facilis alias maxime corporis expedita.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, repellendus. Vel eos ipsa, labore temporibus ex libero provident cum, laborum at, <br /> <br /> a qui tenetur eligendi magni inventore non quo molestiae quas! Assumenda praesentium voluptatum fugit dolor beatae nam? Esse, minus? Fuga distinctio nemo voluptas consequatur facilis alias maxime corporis expedita.

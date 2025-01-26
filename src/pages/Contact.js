@@ -3,12 +3,12 @@ import { IoLocationOutline, IoMailOutline } from 'react-icons/io5'
 import { LuPhone } from 'react-icons/lu'
 
 const Contact = () => {
-    useEffect(() => {
-        window.scroll(0, 0)
-    }, [])
+    // useEffect(() => {
+    //     window.scroll(0, 0)
+    // }, [])
     return (
         <section>
-            <div className='pt-32 pb-40 bg-black'>
+            <div className='pt-32 pb-40 px-6 lg:px-0 bg-black'>
                 <h1 className='w-full max-w-max mx-auto text-primaryOrange text-[50px]'>Contact</h1>
             </div>
             <div className='h-[400px] relative'>
@@ -16,7 +16,7 @@ const Contact = () => {
                 <span className='inline-flex absolute top-0 left-0 bg-[#00000094] w-full h-full'></span>
             </div>
 
-            <div className='py-40 w-full max-w-[1100px] mx-auto flex  justify-between'>
+            <div className='py-40 w-full max-w-[1100px] mx-auto flex flex-wrap gap-4 justify-between'>
                 <div className='flex flex-col gap-4 shadow-[0px_0px_15px_5px_rgba(0,0,0,0.1)] p-10 h-fit rounded-[10px]'>
                     <h1 className='text-[40px]'>Contact Channels</h1>
                     <p className='text-[20px] font-light'>We would love to hear from you</p>
@@ -37,7 +37,7 @@ const Contact = () => {
                     </p>
                 </div>
 
-                <form className='w-full max-w-[50%] flex flex-col gap-10 p-10 rounded-[10px] bg-white shadow-[0px_0px_15px_5px_rgba(0,0,0,0.1)]'>
+                <form className='w-full lg:max-w-[50%] flex flex-col gap-10 p-10 rounded-[10px] bg-white shadow-[0px_0px_15px_5px_rgba(0,0,0,0.1)]'>
                     <h2>Send us a mail</h2>
                     <div className='w-full flex flex-col gap-4'>
                         <label htmlFor="name" className='text-[15px] font-semibold text-gray-400'>Your name</label>

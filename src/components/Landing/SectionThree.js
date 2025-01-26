@@ -84,29 +84,24 @@ const SectionThree = () => {
     };
 
     return (
-        <section className='bg-[#F1F1F1] pt-[450px] pb-40 '>
-            <div className='flex justify-between w-full max-w-max mx-auto items-center '>
-                <h1 className='text-[38px]'>Our Products and Services</h1>
-                <div className='flex items-center gap-4'>
-                    {/* <button
-                        onClick={togglePause}
-                        className='p-4 bg-white rounded-full hover:bg-gray-100 transition-colors'
-                    >
-                        {isPaused ? <BsPlayFill size={24} /> : <BsPauseFill size={24} />}
-                    </button> */}
+        <section className='bg-[#F1F1F1] pt-[450px] pb-40 px-6 lg:px-0 '>
+            <div className='flex flex-wrap gap-10 justify-between w-full max-w-max mx-auto items-center '>
+                <h1 className='text-[24px] md:text-[30px] lg:text-[38px]'>Our Products and Services</h1>
+                <div className='items-center gap-4'>
                     <button
                         onClick={scrollToPrev}
-                        className='p-4 bg-white rounded-full hover:bg-gray-100 transition-colors'
+                        className='zr:hidden lg:flex p-4 bg-white rounded-full hover:bg-gray-100 transition-colors'
                     >
                         <BsChevronLeft size={24} />
                     </button>
                     <button
                         onClick={scrollToNext}
-                        className='p-4 bg-white rounded-full hover:bg-gray-100 transition-colors'
+                        className='zr:hidden lg:flex p-4 bg-white rounded-full hover:bg-gray-100 transition-colors'
                     >
                         <BsChevronRight size={24} />
                     </button>
-                    <Link to={'/services'} className='p-4 rounded-full text-center bg-primaryOrange hover:bg-black hover:text-white  w-[150px] text-base hover:bg-opacity-90 transition-colors'>
+                    <Link to={'/services'} className='p-4 rounded-full text-center bg-primaryOrange hover:bg-black hover:text-white  
+                w-[150px] text-base hover:bg-opacity-90 transition-colors'>
                         See all business
                     </Link>
                 </div>
@@ -156,7 +151,7 @@ const SectionThree = () => {
                 </div>
             </div>
 
-            <div className='flex justify-between w-full max-w-max mx-auto mt-40 items-center '>
+            <div className='flex flex-wrap justify-between w-full max-w-max mx-auto mt-40 items-center '>
                 <h1 className='text-[38px]'>In The News</h1>
                 <div className='flex items-center gap-4'>
 
@@ -168,25 +163,26 @@ const SectionThree = () => {
             </div>
 
             <div className='w-full max-w-max mx-auto mt-20'>
-                <div className='flex gap-10 h-full '>
-                    <div className='relative w-full h-full  max-w-[70%]'>
+                <div className='flex flex-wrap lg:flex-nowrap gap-10 h-full '>
+                    <div className='relative w-full h-full lg:max-w-[70%]'>
                         <img src='/images/award.jpg' alt='award' className='w-full h-full max-h-[550px] object-cover' />
                         <div className='w-full h-full absolute top-0 left-0 bg-[#00000069] p-10 pb-20 flex flex-col gap-10 justify-end'>
                             <p className='text-primaryOrange bg-white px-2 py-1 w-fit text-[12px]'>11 months ago</p>
-                            <p className='text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium mollitia magnam deserunt impedit. </p>
+                            <p className='text-white'>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium mollitia magnam deserunt impedit. </p>
                         </div>
                     </div>
-                    <div className='flex gap-[30px] flex-col w-full h-full max-h-[550px] max-w-[30%]'>
+                    <div className='flex flex-wrap lg:flex-nowrap gap-[30px] flex-col w-full h-full max-h-[550px] lg:max-w-[30%]'>
                         <NewsItem />
                         <NewsItem />
                     </div>
                 </div>
-                <div className='flex gap-10 mt-10'>
-                    <div className='w-full flex gap-10 max-w-[70%]'>
+                <div className='zr:hidden md:flex  flex-wrap lg:flex-nowrap gap-10 mt-10'>
+                    <div className='w-full flex gap-10 flex-wrap lg:flex-nowrap lg:max-w-[70%]'>
                         <NewsItem />
                         <NewsItem />
                     </div>
-                    <div className='w-full max-w-[30%]'>
+                    <div className='w-full lg:max-w-[30%]'>
                         <NewsItem />
                     </div>
                 </div>

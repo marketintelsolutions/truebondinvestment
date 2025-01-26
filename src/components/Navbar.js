@@ -51,33 +51,48 @@ const Navbar = () => {
     }, [controlNavbar]);
 
     return (
-        <div className={`w-full `}>
-            {isAtTop && <div className='flex justify-end w-full max-w-max mx-auto '>
-                <div className='w-full max-w-[813px] flex gap-20 bg-black py-4 px-14 text-primaryOrange slanted-edge'>
-                    <div className='flex gap-2 items-center'>
-                        <span><HiOutlineMail size={25} /></span>
-                        <p>hello@truebondglobalinvestments.com</p>
+        <div className={`w-full relative`}>
+            {isAtTop &&
+                <div className='zr:hidden md:flex justify-end w-full max-w-max mx-auto '>
+                    <div
+                        className='w-full lg:max-w-[813px] flex gap-8 md:gap-14 lg:gap-20 bg-black py-4 px-6 lg:px-14 text-primaryOrange slanted-edge'
+                    >
+                        <div className='flex gap-2 items-center'>
+                            <span><HiOutlineMail size={25} /></span>
+                            <p className='text-sm lg:text-base'>hello@truebondglobalinvestments.com</p>
+                        </div>
+                        <div className='flex gap-2 items-center'>
+                            <span className='text-sm lg:text-base'><FaPhone size={23} /></span>
+                            <p className='text-sm lg:text-base'>09062447811</p>
+                        </div>
+                        <div className='bg-black w-fit max-w-max flex items-center justify-end gap-4  text-primaryOrange text-sm lg:text-base'>
+                            <a target='_blank' href='https://x.com/TruebondGroup'>
+                                <FaTwitter />
+                            </a>
+                            <a target='_blank' href='https://www.instagram.com/truebondglobal?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' >
+                                <FaInstagram />
+                            </a>
+                            <a target='_blank' href='https://www.linkedin.com/in/truebond-globalinvestment-13904a347'>
+                                <FaLinkedin />
+                            </a>
+                        </div>
                     </div>
-                    <div className='flex gap-2 items-center'>
-                        <span><FaPhone size={23} /></span>
-                        <p>09062447811</p>
-                    </div>
-                    <div className='bg-black w-fit max-w-max flex items-center justify-end gap-4  text-primaryOrange'>
-                        <a target='_blank' href='https://x.com/TruebondGroup'><FaTwitter /></a>
-                        <a target='_blank' href='https://www.instagram.com/truebondglobal?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' ><FaInstagram /></a>
-                        <a target='_blank' href='https://www.linkedin.com/in/truebond-globalinvestment-13904a347'><FaLinkedin /></a>
-                    </div>
-                </div>
-            </div>}
-            <nav className={`flex w-full justify-center bg-white py-4 fixed transition-transform duration-300 z-50 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
-                <div className='flex relative gap-8 justify-between  w-full max-w-max  items-center bg-primaryBlue text-black '>
+                </div>}
+            <nav className={`flex w-full relative md:fixed justify-center bg-white py-4  transition-transform duration-300 z-50 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
+                <div className='flex relative gap-8 justify-between px-6 sm:px-0 w-full max-w-max items-center bg-primaryBlue text-black '>
                     <div className='flex items-center gap-8 md:w-auto w-full justify-between'>
-                        <Link to={'/'} className='flex  items-center gap-3 h-full py-0'>
-                            <img src="/images/logo.svg" alt="logo" className='max-w-[250px]' />
+                        <Link to={'/'} className='flex items-center gap-3 h-full py-0'>
+                            <img
+                                src="/images/logo.svg"
+                                alt="logo"
+                                className='max-w-[150px] lg:max-w-[250px]'
+                            />
                         </Link>
                     </div>
                     <div
-                        className={`md:relative absolute bg-black px-6 justify-between text-white  left-0 md:flex-row flex-col max-w-[837px] w-full bg-primaryBlue md:py-4 py-10  items-center gap-14 pr-10 ${isMenu ? 'flex ' : 'md:flex zr:hidden '}`}
+                        className={`md:relative absolute bg-black px-6 justify-between text-white top-[80px] md:top-0 left-0 md:flex-row flex-col max-w-[837px] w-full bg-primaryBlue md:py-4 py-10  items-center gap-14 pr-10 
+                            ${isMenu ? 'flex ' : 'md:flex zr:hidden'}
+                        `}
                         onMouseLeave={() => setIsDropdown(false)}
                     >
                         {navigationLinks.map((item, index) => {
@@ -100,6 +115,8 @@ const Navbar = () => {
                                                         key={dropIndex}
                                                         to={dropdownItem.path}
                                                         className={`hover:text-primaryOrange   ${pathname === dropdownItem.path ? 'text-primaryRed' : 'text-white'}`}
+                                                        onClick={() => setIsMenu(false)}
+
                                                     >
                                                         {dropdownItem.label}
                                                     </Link>
@@ -114,13 +131,19 @@ const Navbar = () => {
                                     key={index}
                                     to={item.path}
                                     className={`px-2 hover:text-primaryOrange font-semibold text-lg  ${pathname === item.path ? 'text-primaryOrange' : 'text-white'}`}
+                                    onClick={() => setIsMenu(false)}
                                 >
                                     {item.label}
                                 </Link>
                             );
                         })}
                     </div>
-                    <span className={`pl-2 pr-6 pt-6 pb-2 cursor-pointer zr:inline-flex md:hidden`} onClick={() => setIsMenu(!isMenu)}><IoMenu size={30} /></span>
+                    <span
+                        className={`pl-2 pr-6 pt-6 pb-2 cursor-pointer zr:inline-flex md:hidden`}
+                        onClick={() => setIsMenu(!isMenu)}
+                    >
+                        <IoMenu size={30} />
+                    </span>
                 </div>
             </nav>
         </div>
