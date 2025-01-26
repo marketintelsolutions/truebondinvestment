@@ -49,8 +49,8 @@ const Footer = () => {
                             <p className='text-base font-roboto mt-5'>PLot 22, Akiogun New Market Road,
                                 <br />
                                 Oniru Victoria Island, Lagos
-                                <br />
-                                info@carrierinsurancebrokers.com</p>
+                                <br /><br />
+                                hello@truebondglobalinvestments.com</p>
                             <div className='flex items-center gap-4 h-full pt-6 pb-2  border-b-4 border-transparent '>
                                 <a
                                     target='_blank'
@@ -74,7 +74,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='pt-4 border-t'>
-                        <p>&copy; Truebond Investment {new Date().getFullYear()} </p>
+                        <p>&copy;. {new Date().getFullYear()} Truebond Global Investment Group. All Rights Reserved</p>
                     </div>
                 </div>
             </div>
