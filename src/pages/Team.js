@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TeamMemberModal from '../components/About/TeamMemberModal'
 import TeamMember from '../components/About/TeamMember'
 import { useDisclosure } from '../hooks/useDisclosure'
 
 const Team = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
+
     const teammemberModal = useDisclosure()
 
     return (

@@ -3,9 +3,9 @@ import { IoLocationOutline, IoMailOutline } from 'react-icons/io5'
 import { LuPhone } from 'react-icons/lu'
 
 const Contact = () => {
-    // useEffect(() => {
-    //     window.scroll(0, 0)
-    // }, [])
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <section>
             <div className='pt-32 pb-40 px-6 lg:px-0 bg-black'>

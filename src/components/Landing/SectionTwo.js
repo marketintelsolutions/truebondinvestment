@@ -5,7 +5,7 @@ import Counts from './Counts'
 const SectionTwo = () => {
     return (
         <section className='bg-[#222222] relative z-20 py-20 px-6 lg:px-0'>
-            <div className='w-full mx-auto max-w-max text-white flex flex-wrap justify-between'>
+            <div className='w-full mx-auto max-w-max text-white flex flex-wrap lg:flex-nowrap justify-between'>
                 <div className='w-full flex flex-col gap-0'>
                     <h2 className='text-base '>WELCOME TO</h2>
                     <h1 className='text-[38px]'>Truebond Investment</h1>

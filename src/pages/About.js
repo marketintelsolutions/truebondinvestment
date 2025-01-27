@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 
 const About = () => {
-    // useEffect(() => {
-    //     window.scroll(0, 0)
-    // }, [])
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <section className='bg-black text-white flex flex-col justify-center items-center pt-40'>
             <h2 className='text-[20px] md:text-[30px] uppercase tracking-[2px]'>Truebond </h2>

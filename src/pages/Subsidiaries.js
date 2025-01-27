@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { subsidiaries } from '../utils/data'
 import SubsidiaryItem from '../components/Subsidiaries/SubsidiaryItem'
 
 const Subsidiaries = () => {
+    useEffect(() => {
+        window.scroll(0, 0)
+    }, [])
     return (
         <section>
             <div className='pt-32 pb-40 bg-black px-6 lg:px-0'>
