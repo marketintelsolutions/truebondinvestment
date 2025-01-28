@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/truebondinvestment/static/css/main.2f155424.css",
+    "main.js": "/truebondinvestment/static/js/main.96724abd.js",
+    "index.html": "/truebondinvestment/index.html",
+    "main.2f155424.css.map": "/truebondinvestment/static/css/main.2f155424.css.map",
+    "main.96724abd.js.map": "/truebondinvestment/static/js/main.96724abd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f155424.css",
+    "static/js/main.96724abd.js"
+  ]
+}
