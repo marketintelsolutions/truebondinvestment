@@ -83,9 +83,9 @@ const Navbar = () => {
                     <div className='flex items-center gap-8 md:w-auto w-full justify-between'>
                         <Link to={'/'} className='flex items-center gap-3 h-full py-0'>
                             <img
-                                src="/images/logo.svg"
+                                src="/images/mainLogo.png"
                                 alt="logo"
-                                className='max-w-[150px] lg:max-w-[250px]'
+                                className='max-w-[150px] lg:max-w-[230px]'
                             />
                         </Link>
                     </div>

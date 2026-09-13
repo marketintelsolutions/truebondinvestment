@@ -10,8 +10,15 @@ const Footer = () => {
                 <div className='w-full  max-w-max mx-auto flex flex-col flex-wrap gap-10 px-6 lg:px-0 justify-center'>
                     <div className='h-[100px] flex  md:justify-end '>
                         <div className='flex items-center gap-3 '>
-                            <h1 className='text-[30px] md:text-[40px] lg:text-[49px] text-primaryOrange font-semibold'>Truebond</h1>
-                            <p className='text-[20px] md:text-[30px] lg:text-[39px] font-light tracking-[2px]'>INVESTMENT</p>
+                            <Link to={'/'} className='flex items-center gap-3 h-full py-0'>
+                                <img
+                                    src="/images/mainLogoWhite.png"
+                                    alt="logo"
+                                    className='max-w-[150px] lg:max-w-[230px]'
+                                />
+                            </Link>
+                            {/* <h1 className='text-[30px] md:text-[40px] lg:text-[49px] text-primaryOrange font-semibold'>Truebond</h1>
+                            <p className='text-[20px] md:text-[30px] lg:text-[39px] font-light tracking-[2px]'>INVESTMENT</p> */}
                         </div>
 
                     </div>
