@@ -87,7 +87,7 @@ const SectionThree = () => {
         <section className='bg-[#F1F1F1] pt-[450px] pb-40 px-6 lg:px-0 '>
             <div className='flex flex-wrap gap-10 justify-between w-full max-w-max mx-auto items-center '>
                 <h1 className='text-[24px] md:text-[30px] lg:text-[38px]'>Our Products and Services</h1>
-                <div className='items-center gap-4'>
+                <div className='flex items-center gap-4'>
                     <button
                         onClick={scrollToPrev}
                         className='zr:hidden lg:flex p-4 bg-white rounded-full hover:bg-gray-100 transition-colors'
